@@ -18,7 +18,7 @@ The meta data derived from shape files in GIS contains information about the bui
 
 parking, roof, ruins, office, commercial, retail, public, apartments etc. including those relevant for the study such as greenhouse, glasshouse, farm, farm auxilliary.
 
-![Attribute table.png](D:\master\git hub\Master-project)
+![Attribute table.png](https://github.com/Phoenix-ju/greenhouses-in-France/blob/main/Attribute%20table.png)
 
 Out of the ***3 471 087*** rows, only ***6 089*** are labeled with a specific building type. The remaining ***3 464 998*** IDs are missing and marked as NULL. 
 
