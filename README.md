@@ -37,7 +37,7 @@ It is evident that a large number of greenhouses are not labeled due to the abse
 * The number of farmyard is 87. (the same as above)
 ![Screenshot (20)](https://github.com/Phoenix-ju/greenhouses-in-France/assets/128978994/0b798d04-6989-4870-8f89-1ea62e2b5326)
 
-![Prealpes de Province map from QGIS](D:\master\git hub\Master-project\Prealpes de province.png)
+![Prealpes de Province map from QGIS](https://github.com/Phoenix-ju/greenhouses-in-France/blob/main/Prealpes%20de%20province.png)
 
 ##### Data collection. Source 2.
 * [Farm boundary and field parcel data from Registre parcellaire graphique (Graphic parcel register, France)](https://geoservices.ign.fr/telechargement)
