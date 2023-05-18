@@ -35,7 +35,7 @@ It is evident that a large number of greenhouses are not labeled due to the abse
 * The number of glasshouses is 15. (they look pretty simillar to greenhouses)
 * The number of farmland is 1104. (it is important due to presence of the houses, which are simillar to greenhouses on this land)
 * The number of farmyard is 87. (the same as above)
-![Screenshot (20)](https://github.com/Phoenix-ju/greenhouses-in-France/assets/128978994/0b798d04-6989-4870-8f89-1ea62e2b5326)
+![Screenshot (20)](https://github.com/Phoenix-ju/greenhouses-in-France/blob/main/Province%20Cote%20d%20Azur.png)
 
 ![Prealpes de Province map from QGIS](https://github.com/Phoenix-ju/greenhouses-in-France/blob/main/Prealpes%20de%20province.png)
 
