@@ -18,6 +18,9 @@ iii. Decision Tree Modeling and Classification Accuracy Assessment. Decision tre
 
 Overall, the MDI was found to be the most important feature for greenhouse detection, and a stable threshold value was identified. The proposed approach achieved high overall accuracies of 93.0% and 93.3% for the 2014 and 2015 datasets, respectively.
 
+2. [Evaluation of different classification techniques for the detection of glass and plastic greenhouses from WorldView-2 satellite imagery](https://www.spiedigitallibrary.org/journals/journal-of-applied-remote-sensing/volume-7/issue-1/073553/Evaluation-of-different-classification-techniques-for-the-detection-of-glass/10.1117/1.JRS.7.073553.short)
+3. [Object-based classification approach for greenhouse mapping using Landsat-8 imagery](http://www.ijabe.org/index.php/ijabe/article/view/1414)
+4. [Liu, Jian Guo, and Philippa J. Mason. Essential image processing and GIS for remote sensing. John Wiley & Sons, 2013.](https://books.google.de/books?hl=en&lr=&id=a9_CLn4FWEMC&oi=fnd&pg=PT13&ots=M6JDtXOypP&sig=SpAGtOUkVEul2MqiWBxo_wmbc4A&redir_esc=y#v=onepage&q&f=false)
 
 
 
