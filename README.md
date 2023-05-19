@@ -26,11 +26,11 @@ Out of the ***3 471 087*** rows, only ***6 089*** are labeled with a specific bu
 Using GIS (filter tool), the data was sorted, and new shapefiles were created based on the available information about greenhouses. 
 Categories such as farms, roofs, and glass houses have the potential to be greenhouses as well. Separate shapefiles were created for these categories. From the generated maps, it is visually evident that not all buildings are labeled as greenhouses. Considering the lack of data for a significant number (***3 464 998***) of entries, it is necessary to establish a specific classification that can help identify missing greenhouses based on patterns.
 
-In the PACA region, there are a total of 2706 greenhouses, among which 718 belong to the Prealps de province. The remaining greenhouses, glass houses, and farms are scattered across other provinces in the region. Additionally, in the Prealps de province, the greenhouses are densely clustered, which potentially aids in accurately identifying their spectral signature for the detection of unmarked greenhouses.
+In the PACA region, there are a total of 2706 greenhouses, among which 718 belong to the Prealps de province. The remaining greenhouses, glass houses, and farms are scattered across other provinces in the region. Additionally, in the Prealpes de Provence, the greenhouses are densely clustered, which potentially aids in accurately identifying their spectral signature for the detection of unmarked greenhouses.
 
 It is evident that a large number of greenhouses are not labeled due to the absence of data in the "type" category. However, based on the available data, the following conclusions can be drawn:
 
-* ***The majority of relevant data is marked in the south, specifically in the Alpes-de-Provence region, therefore, this region will be used for further research.***
+* ***The majority of relevant data is marked in the south, specifically in the Prealpes de Provence region, therefore, this region will be used for further research.***
 * The number of greenhouses is 718.
 * The number of glasshouses is 15. (they look pretty simillar to greenhouses)
 * The number of farmland is 1104. (it is important due to presence of the houses, which are simillar to greenhouses on this land)
@@ -49,7 +49,7 @@ These files were also cropped for the Préalpes de Provence province in the sout
 ###### Data collection. Source 3.
 * [Building Footprint from MS Satellite](https://github.com/microsoft/GlobalMLBuildingFootprints)
 
-Among this data, building footprints were selected from three squares covering the southern region of Préalpes de Provence in France. The files were converted to the required format, from .csv.gz to GeoJSON, for further processing in GIS.
+Among this data, building footprints were selected from three satellite imagies (3 squares) covering the southern region of Préalpes de Provence and including the whole Côte d'Azur region in France. The files were converted to the required format (from .csv.gz to GeoJSON) for further processing in GIS.
 ([code for json conversion](https://github.com/microsoft/GlobalMLBuildingFootprints/blob/main/scripts/make-gis-friendly.py))
 
 ###### The next step in GIS after data processing.
