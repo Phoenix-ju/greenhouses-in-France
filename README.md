@@ -4,7 +4,7 @@ The primary objective of this study is to derive an inventory of greenhouses and
 
 Several data sources were used for the project. Their descriptions are provided below. In general, the data consists of satellite-derived information, which, after additional processing, will be utilized in a GIS program to identify greenhouses in the designated region. The use of multiple sources simultaneously is necessary for further result validation and for the outcomes accuracy increase.
 
-**__Literature overview (will be written here)__**
+**__Literature overview (will be attached here soon)__**
 
 ### Data collection. Source 1: 
 * [OpenStreetMap (***OSM***)](https://download.geofabrik.de/europe/france.html) for Provence Alpes-Cote-d'Azur, France.
