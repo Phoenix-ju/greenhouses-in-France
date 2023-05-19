@@ -4,7 +4,23 @@ The primary objective of this study is to derive an inventory of greenhouses and
 
 Several data sources were used for the project. Their descriptions are provided below. In general, the data consists of satellite-derived information, which, after additional processing, will be utilized in a GIS program to identify greenhouses in the designated region. The use of multiple sources simultaneously is necessary for further result validation and for the outcomes accuracy increase.
 
-**__Literature overview (will be attached here soon)__**
+**__Literature overview (to be continued..)__**
+#### 1. [Object-Based Greenhouse Mapping Using Very High Resolution Satellite Data and Landsat 8 Time Series](https://www.mdpi.com/144558)
+Remarks: Mapping greenhouses using remote sensing poses challenges due to the significant variations in the spectral signature of plastic-covered(or any other roof material)structures.
+
+Methods: 
+
+i. Segmentation. The segmentation process involved analyzing two different datasets: a time series of Landsat 8 images from 2014 and a WorldView-2 multispectral image from 2013. The images were geometrically and atmospherically corrected. A multi-resolution segmentation algorithm in eCognition software was used, considering factors such as homogeneity criteria, color and shape weights, and compactness and smoothness criteria. The best segmentation was determined through a supervised evaluation using the Euclidean Distance 2 (ED2) method, which takes into account both geometric and arithmetic discrepancies between the segmented objects and manually delineated reference polygons representing greenhouses.
+
+ii. The features used for the object-based classification included spectral information (mean and standard deviation values), spectral and vegetation indices, Moment Distance Index (MDI) for analyzing the shape of reflectance spectra, GLCM texture features (homogeneity, dissimilarity, and entropy), and statistical seasonal features (maximum, minimum, difference, and average values). These features were derived from the L8 time series and WV2 single image datasets to carry out the object-based classification.
+
+iii. Decision Tree Modeling and Classification Accuracy Assessment. Decision tree modeling algorithm was used for classification in this study. The decision tree classifier, implemented in eCognition, uses rule sets to determine feature thresholds and provides a clear and interpretable structure. The classification accuracy was assessed using both object-based ground truth datasets and pixel-based ground truth datasets obtained from manual digitization, allowing the evaluation of the classification performance and the determination of the relative importance of different features.
+
+Overall, the MDI was found to be the most important feature for greenhouse detection, and a stable threshold value was identified. The proposed approach achieved high overall accuracies of 93.0% and 93.3% for the 2014 and 2015 datasets, respectively.
+
+
+
+
 
 ### Data collection. Source 1: 
 * [OpenStreetMap (***OSM***)](https://download.geofabrik.de/europe/france.html) for Provence Alpes-Cote-d'Azur, France.
