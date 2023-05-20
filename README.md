@@ -22,7 +22,7 @@ Overall, the MDI was found to be the most important feature for greenhouse detec
 3. [Object-based classification approach for greenhouse mapping using Landsat-8 imagery](http://www.ijabe.org/index.php/ijabe/article/view/1414)
 4. [Liu, Jian Guo, and Philippa J. Mason. Essential image processing and GIS for remote sensing. John Wiley & Sons, 2013.](https://books.google.de/books?hl=en&lr=&id=a9_CLn4FWEMC&oi=fnd&pg=PT13&ots=M6JDtXOypP&sig=SpAGtOUkVEul2MqiWBxo_wmbc4A&redir_esc=y#v=onepage&q&f=false)
 
-
+5. [A review of research on agrivoltaic systems](https://www.sciencedirect.com/science/article/abs/pii/S1364032122002635?via%3Dihub)
 
 
 ### Data collection. Source 1: 
