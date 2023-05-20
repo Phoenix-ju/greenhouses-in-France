@@ -76,6 +76,11 @@ From the OSM data, using the Automatic Classification plugin, we extract greenho
 
 ###### Greenhouse signature identification in GIS Automatic classification plugin. (will be written here)
 
+Only greenhouses from the OSM building data that belonged to the Prealps de Provence region were selected. Then, a spectral signature was assigned to the greenhouses and overlaid on the building footprints data, which represents all the buildings in the region. During the overlay, houses that matched the spectral signature indicative of greenhouses were displayed.
+
+
+
+
 
 
 
