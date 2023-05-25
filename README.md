@@ -43,27 +43,27 @@ Out of the ***3 471 087*** rows, only ***6 089*** are labeled with a specific bu
 
 #### A brief GIS data analysis.
 Using GIS (filter tool), the data was sorted, and new shapefiles were created based on the available information about greenhouses. 
-Categories such as farms, roofs, and glass houses have the potential to be greenhouses as well. Separate shapefiles were created for these categories. From the generated maps, it is visually evident that not all buildings are labeled as greenhouses. Considering the lack of data for a significant number (***3 464 998***) of entries, it is necessary to establish a specific classification that can help identify missing greenhouses based on patterns.
+Categories such as farms, roofs, and glass houses have the potential to be greenhouses as well. Separate shapefiles were created for these categories. From the generated maps and metadata, it is evident that not all buildings are labeled as greenhouses. Considering the lack of data for a significant number (***3 464 998***) of entries, it is necessary to establish a specific classification that can help identify missing greenhouses based on patterns.
 
-In the PACA region, there are a total of 2706 greenhouses, among which 718 belong to the Prealps de province. The remaining greenhouses, glass houses, and farms are scattered across other provinces in the region. Additionally, in the Prealpes de Provence, the greenhouses are densely clustered, which potentially aids in accurately identifying their spectral signature for the detection of unmarked greenhouses.
+In the PACA region, there are a total of 2706 greenhouses, among which 718 belong to the Prealps de Provence. The remaining greenhouses, glass houses, and farms are scattered across other provinces in the region. Additionally, the greenhouses are densely clustered in the Prealpes de Provence, which potentially aids in accurately identifying their spectral signature for the detection of unmarked greenhouses.
 
 It is evident that a large number of greenhouses are not labeled due to the absence of data in the "type" category. However, based on the available data, the following conclusions can be drawn:
 
 * ***The majority of relevant data is marked in the south, specifically in the Prealpes de Provence region, therefore, this region will be used for further research.***
 * The number of greenhouses is 718.
-* The number of glasshouses is 15. (they look pretty simillar to greenhouses)
+* The number of glasshouses is 15. (they look pretty simillar to greenhouses on Bing Satellite)
 * The number of farmland is 1104. (it is important due to presence of the houses, which are simillar to greenhouses on this land)
 * The number of farmyard is 87. (the same as above)
 ![Screenshot (20)](https://github.com/Phoenix-ju/greenhouses-in-France/blob/main/Province%20Cote%20d%20Azur.png)
 
-![Prealpes de Province map from QGIS](https://github.com/Phoenix-ju/greenhouses-in-France/blob/main/Prealpes%20de%20province.png)
+![Prealpes de Provence map from QGIS](https://github.com/Phoenix-ju/greenhouses-in-France/blob/main/Prealpes%20de%20province.png)
 
 ##### Data collection. Source 2.
 * [Farm boundary and field parcel data from Registre parcellaire graphique (Graphic parcel register, France)](https://geoservices.ign.fr/telechargement)
 
 From this file, two shapefiles are extracted for QGIS (ILOTS_ANONYMES & PARCELLES_GRAPHIQUES), containing information about the graphic data of parcels (since 2015) and islets (2014 and earlier editions) with their main crop. 
 
-These files were also cropped for the Préalpes de Provence province in the south of France to facilitate faster data processing in GIS.
+These files were also cropped for the Préalpes de Provence in the south of France to facilitate faster data processing in GIS.
 
 ###### Data collection. Source 3.
 * [Building Footprint from MS Satellite](https://github.com/microsoft/GlobalMLBuildingFootprints)
@@ -72,9 +72,18 @@ Among this data, building footprints were selected from three satellite imagies 
 ([code for json conversion](https://github.com/microsoft/GlobalMLBuildingFootprints/blob/main/scripts/make-gis-friendly.py))
 
 ###### The next step in GIS after data processing.
-From the OSM data, using the Automatic Classification plugin, we extract greenhouse samples. Once we have identified the greenhouse samples, we intersect them with "ILOTS_ANONYMES & PARCELLES_GRAPHIQUES". Then, we overlay the building footprints on the intersected areas to identify buildings that overlap with the "ilots parcelles" fields. From these buildings, we select the ones that match the greenhouse criteria based on spectral assessment from OSM.
+From the OSM data, using the Automatic Classification Plugin, greenhouse samples(GS) were extracted. Once GS have been identified, the intersection with "ILOTS_ANONYMES & PARCELLES_GRAPHIQUES" data was made. Then, i overlayed the building footprints on the intersected areas to identify buildings that overlap with the "ilots parcelles" fields. From these buildings i selected ones that match the greenhouse criteria based on spectral assessment from OSM.
 
-###### Greenhouse signature identification in GIS Automatic classification plugin. (will be written here)
+###### Mission Landsat 8-9 OLI/TIRS C2L2(link)
+Landsat 8 and Landsat 9 are satellite missions equipped with advanced sensors. OLI (Operational Land Imager) captures data in multiple spectral bands, including visible and near-infrared ranges, providing detailed imaging of Earth's surface. TIRS (Thermal Infrared Sensor) measures thermal emissions and surface temperature using two channels operating in the long-wave infrared range. These missions enable the study of environmental changes, land use, and temperature analysis.
+
+
+
+
+
+
+
+###### Greenhouse signature identification in GIS Automatic classification plugin.
 
 Only greenhouses from the OSM building data that belonged to the Prealps de Provence region were selected. Then, a spectral signature was assigned to the greenhouses and overlaid on the building footprints data, which represents all the buildings in the region. During the overlay, houses that matched the spectral signature indicative of greenhouses were displayed.
 
