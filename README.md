@@ -23,6 +23,7 @@ Overall, the MDI was found to be the most important feature for greenhouse detec
 4. [Liu, Jian Guo, and Philippa J. Mason. Essential image processing and GIS for remote sensing. John Wiley & Sons, 2013.](https://books.google.de/books?hl=en&lr=&id=a9_CLn4FWEMC&oi=fnd&pg=PT13&ots=M6JDtXOypP&sig=SpAGtOUkVEul2MqiWBxo_wmbc4A&redir_esc=y#v=onepage&q&f=false)
 
 5. [A review of research on agrivoltaic systems](https://www.sciencedirect.com/science/article/abs/pii/S1364032122002635?via%3Dihub)
+6. [High-spatiotemporal-resolution mapping of global urban change from 1985 to 2015](https://drive.google.com/file/d/1hADuFtGuqmRP1cgfFfVf9QrXjVxsk0pB/view)
 
 
 ### Data collection. Source 1: 
@@ -74,18 +75,29 @@ Among this data, building footprints were selected from three satellite imagies 
 ###### The next step in GIS after data processing.
 From the OSM data, using the Automatic Classification Plugin, greenhouse samples(GS) were extracted. Once GS have been identified, the intersection with "ILOTS_ANONYMES & PARCELLES_GRAPHIQUES" data was made. Then, i overlayed the building footprints on the intersected areas to identify buildings that overlap with the "ilots parcelles" fields. From these buildings i selected ones that match the greenhouse criteria based on spectral assessment from OSM.
 
-###### Mission Landsat 8-9 OLI/TIRS C2L2(link)
+###### [Mission Landsat 8-9 OLI/TIRS C2L2](https://earthexplorer.usgs.gov/)
 Landsat 8 and Landsat 9 are satellite missions equipped with advanced sensors. OLI (Operational Land Imager) captures data in multiple spectral bands, including visible and near-infrared ranges, providing detailed imaging of Earth's surface. TIRS (Thermal Infrared Sensor) measures thermal emissions and surface temperature using two channels operating in the long-wave infrared range. These missions enable the study of environmental changes, land use, and temperature analysis.
 
+* In this project, Landsat 8-9 images were used due to their distinct number of channels and detalization.
+* To facilitate the identification of greenhouses, summer images were selected since they exhibit more vegetation. 
+* Four images covering the Cote d'Azur region were chosen, with an additional criterion of cloud cover less than 10%. 
+* Each image consists of 6 bands, and there was an accompanying mtl.text file that provides GIS information about the channels. 
+* This results in 7 rasters that was mosaicked together so that each pixel contains information from all 7 bands. To accomplish this, preprocessing was conducted in GIS.
 
+Each band in Landsat 8-9 images has a resolution of 30 meters and covers a different wavelength range. Here are the wavelength ranges for each band:
 
-
-
-
+Band 1 (Coastal/Aerosol): 0.433 - 0.453 micrometers
+Band 2 (Blue): 0.450 - 0.515 micrometers
+Band 3 (Green): 0.525 - 0.600 micrometers
+Band 4 (Red): 0.630 - 0.680 micrometers
+Band 5 (Near-Infrared): 0.845 - 0.885 micrometers
+Band 6 (Short-Wave Infrared 1): 1.560 - 1.660 micrometers
 
 ###### Greenhouse signature identification in GIS Automatic classification plugin.
 
 Only greenhouses from the OSM building data that belonged to the Prealps de Provence region were selected. Then, a spectral signature was assigned to the greenhouses and overlaid on the building footprints data, which represents all the buildings in the region. During the overlay, houses that matched the spectral signature indicative of greenhouses were displayed.
+
+
 
 
 
