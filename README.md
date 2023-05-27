@@ -83,6 +83,7 @@ Landsat 8 and Landsat 9 are satellite missions equipped with advanced sensors. O
 * Four images covering the Cote d'Azur region were chosen, with an additional criterion of cloud cover less than 10%. 
 * Each image consists of 6 bands, and there was an accompanying mtl.text file that provides GIS information about the channels. 
 * This results in 7 rasters that was mosaicked together so that each pixel contains information from all 7 bands. To accomplish this, preprocessing was conducted in GIS.
+[Screenshot (31).png]()
 
 Each band in Landsat 8-9 images has a resolution of 30 meters and covers a different wavelength range. Here are the wavelength ranges for each band:
 
