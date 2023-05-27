@@ -83,21 +83,24 @@ Landsat 8 and Landsat 9 are satellite missions equipped with advanced sensors. O
 * Four images covering the Cote d'Azur region were chosen, with an additional criterion of cloud cover less than 10%. 
 * Each image consists of 6 bands, and there was an accompanying mtl.text file that provides GIS information about the channels. 
 * This results in 7 rasters that was mosaicked together so that each pixel contains information from all 7 bands. To accomplish this, preprocessing was conducted in GIS.
-[Screenshot (31).png]()
+![Screenshot (31).png](https://github.com/Phoenix-ju/greenhouses-in-France/blob/main/Screenshot%20(31).png)
 
 Each band in Landsat 8-9 images has a resolution of 30 meters and covers a different wavelength range. Here are the wavelength ranges for each band:
 
-Band 1 (Coastal/Aerosol): 0.433 - 0.453 micrometers
-Band 2 (Blue): 0.450 - 0.515 micrometers
-Band 3 (Green): 0.525 - 0.600 micrometers
-Band 4 (Red): 0.630 - 0.680 micrometers
-Band 5 (Near-Infrared): 0.845 - 0.885 micrometers
-Band 6 (Short-Wave Infrared 1): 1.560 - 1.660 micrometers
+* Band 1 (Coastal/Aerosol): 0.433 - 0.453 micrometers
+* Band 2 (Blue): 0.450 - 0.515 micrometers
+* Band 3 (Green): 0.525 - 0.600 micrometers
+* Band 4 (Red): 0.630 - 0.680 micrometers
+* Band 5 (Near-Infrared): 0.845 - 0.885 micrometers
+* Band 6 (Short-Wave Infrared 1): 1.560 - 1.660 micrometers
 
 ###### Greenhouse signature identification in GIS Automatic classification plugin.
 
 Only greenhouses from the OSM building data that belonged to the Prealps de Provence region were selected. Then, a spectral signature was assigned to the greenhouses and overlaid on the building footprints data, which represents all the buildings in the region. During the overlay, houses that matched the spectral signature indicative of greenhouses were displayed.
 
+![]()
+
+![]()
 
 
 
