@@ -98,9 +98,10 @@ Each band in Landsat 8-9 images has a resolution of 30 meters and covers a diffe
 
 Only greenhouses from the OSM building data that belonged to the Prealps de Provence region were selected. Then, a spectral signature was assigned to the greenhouses and overlaid on the building footprints data, which represents all the buildings in the region. During the overlay, houses that matched the spectral signature indicative of greenhouses were displayed.
 
-![]()
 
-![]()
+![Extract selected features](https://github.com/Phoenix-ju/greenhouses-in-France/blob/main/extract%20selected%20features.png)
+
+![Extract by location](https://github.com/Phoenix-ju/greenhouses-in-France/blob/main/extraction%20by%20location.png)
 
 
 
