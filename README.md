@@ -98,6 +98,29 @@ Each band in Landsat 8-9 images has a resolution of 30 meters and covers a diffe
 
 Only greenhouses from the OSM building data that belonged to the Prealps de Provence region were selected. Then, a spectral signature was assigned to the greenhouses and overlaid on the building footprints data, which represents all the buildings in the region. During the overlay, houses that matched the spectral signature indicative of greenhouses were displayed.
 
+To select a spectral sample in GIS, you can follow these steps:
+
+* Activate the ROI (Region of Interest) pointer in your GIS software. This option helps you identify areas with similar spectral characteristics.
+
+* Choose a real greenhouse on the map that you want to use as a sample. Mark it as a reference or standard sample.
+
+* Apply this reference sample to the entire region you are interested in. The software will compare the spectral signatures of other areas with the reference sample.
+
+* The resulting vector data can be analyzed further. You can intersect the vectorized result with the building footprints to extract the potential locations of greenhouses.
+
+Now, regarding your question about determining the most common roofing materials used in greenhouses, and selecting the appropriate spectral signature for detection, here's what you can do:
+
+* Conduct a survey or collect information on greenhouse constructions in your region. This can include materials commonly used for greenhouse roofing, such as glass, polycarbonate, or plastic film.
+
+* Analyze the collected data to identify the predominant roofing material. Determine which material is most frequently used for greenhouse roofs in your area.
+
+* Once you have identified the primary roofing material, you can search for spectral signatures or spectral libraries specific to that material. Many remote sensing or GIS software provide pre-defined spectral libraries that include various materials.
+
+* Select the spectral signature that corresponds to the roofing material you identified as most common. Use this spectral signature as a reference or standard for your spectral analysis to detect similar roofs in the region.
+
+By following these steps, you can effectively identify potential greenhouses based on their spectral characteristics, taking into account the prevalent roofing materials in your area. 
+
+
 
 ![Extract selected features](https://github.com/Phoenix-ju/greenhouses-in-France/blob/main/extract%20selected%20features.png)
 
