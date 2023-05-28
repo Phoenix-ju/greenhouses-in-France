@@ -118,8 +118,7 @@ To obtain a precise classification, i need to understand which materials are mos
 
 * Select the spectral signature that corresponds to the roofing material you identified as most common. Use this spectral signature as a reference or standard for your spectral analysis to detect similar roofs in the region.material you identified as most common. Use this spectral signature as a reference or standard for your spectral analysis to detect similar roofs in the region.
 
-By following these steps, you can effectively identify potential greenhouses based on their spectral characteristics, taking into account the prevalent roofing materials in your area. 
-
+*At the moment, I have identified areas with potential greenhouses and can extract their coordinates for further processing in Python. However, I have not done that yet because the preliminary results do not accurately reflect the greenhouse locations (for example, when compared to satellite imagery, many of the areas classified by the classifier do not even represent buildings). The classification needs to be modified.*
 
 
 
