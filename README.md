@@ -2,7 +2,7 @@
 ## Goal
 The primary objective of this study is to derive an inventory of greenhouses and farm structures in Provence Alpes-Cote-d'Azure (***PACA***), France using remote sensing data and machine learning techniques. The study aims to train the algorithm to identify greenhouses in the area. 
 
-Several data sources were used for the project. Their descriptions are provided below. In general, the data consists of satellite-derived information, which, after additional processing, will be utilized in a GIS program to identify greenhouses in the designated region. The use of multiple sources simultaneously is necessary for further result validation and for the outcomes accuracy increase.
+Several data sources were used for the project. Their descriptions are provided below. In general, the data consists of satellite-derived information, which, after additional processing, will be utilized in a GIS program to identify greenhouses in the designated region. The use of multiple sources simultaneously is necessary for further result validation and for the increse of outcomes accuracy.
 
 **__Literature overview (to be continued..)__**
 #### 1. [Object-Based Greenhouse Mapping Using Very High Resolution Satellite Data and Landsat 8 Time Series](https://www.mdpi.com/144558)
@@ -69,7 +69,7 @@ These files were also cropped for the Préalpes de Provence in the south of Fran
 ###### Data collection. Source 3.
 * [Building Footprint from MS Satellite](https://github.com/microsoft/GlobalMLBuildingFootprints)
 
-Among this data, building footprints were selected from three satellite imagies (3 squares) covering the southern region of Préalpes de Provence and including the whole Côte d'Azur region in France. The files were converted to the required format (from .csv.gz to GeoJSON) for further processing in GIS.
+Among this data, building footprints were selected from three satellite imagies (3 squares) covering the whole southern region of PACA and Préalpes de Provence and including the whole Côte d'Azur region in France. The files were converted to the required format (from .csv.gz to GeoJSON) for further processing in GIS.
 ([code for json conversion](https://github.com/microsoft/GlobalMLBuildingFootprints/blob/main/scripts/make-gis-friendly.py))
 
 ###### The next step in GIS after data processing.
