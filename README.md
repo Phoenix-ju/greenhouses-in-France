@@ -24,6 +24,8 @@ Overall, the MDI was found to be the most important feature for greenhouse detec
 
 5. [A review of research on agrivoltaic systems](https://www.sciencedirect.com/science/article/abs/pii/S1364032122002635?via%3Dihub)
 6. [High-spatiotemporal-resolution mapping of global urban change from 1985 to 2015](https://drive.google.com/file/d/1hADuFtGuqmRP1cgfFfVf9QrXjVxsk0pB/view)
+7. [Mapping Plastic Greenhouses with Two-Temporal Sentinel-2 Images and 1D-CNN Deep Learning](https://www.mdpi.com/2072-4292/13/14/2820/htm)
+A new fine- and coarse-scale mapping approach using two-temporal Sentinel-2 images with various seasonal characteristics and a one-dimensional convolutional neural network (1D-CNN) was proposed. Having applied this approach in a pilot area study, the results were summarized as follows: (1) A time-series analysis of Sentinel-2 images showed that the *reflectance of greenhouses changes during crop growth and development. In particular, the red-edge and near-infrared bands undergo a significant increase and then decrease during the whole crop growth period.* Thus, two critical period images, containing a substantial difference in greenhouse reflectance, were sufficient to carry out an accurate and efficient mapping result. (2) The 1D-CNN classifier was used to map greenhouses by capturing subtle details and the overall trend of the spectrum curve.
 
 
 ### Data collection. Source 1: 
@@ -86,13 +88,13 @@ Landsat 8 and Landsat 9 are satellite missions equipped with advanced sensors. O
 ![Screenshot (31).png](https://github.com/Phoenix-ju/greenhouses-in-France/blob/main/Screenshot%20(31).png)
 
 Each band in Landsat 8-9 images has a resolution of 30 meters and covers a different wavelength range. Here are the wavelength ranges for each band:
-
-* Band 1 (Coastal/Aerosol): 0.433 - 0.453 micrometers
-* Band 2 (Blue): 0.450 - 0.515 micrometers
-* Band 3 (Green): 0.525 - 0.600 micrometers
-* Band 4 (Red): 0.630 - 0.680 micrometers
-* Band 5 (Near-Infrared): 0.845 - 0.885 micrometers
-* Band 6 (Short-Wave Infrared 1): 1.560 - 1.660 micrometers
+μm
+* Band 1 (Coastal/Aerosol): 433 - 453 nanometers (two main uses: imaging shallow water, and tracking fine particles like dust&smoke, therefore band 1 might be not relevant)
+* Band 2 (Blue): 450 - 515 nanometers
+* Band 3 (Green): 525 - 600 nanometers
+* Band 4 (Red): 630 - 680 nanometers
+* Band 5 (Near-Infrared): 845 - 885 nanometers (its heat, which relevance is also debatable)
+* Band 6 (Short-Wave Infrared 1): 156 - 166 nanometers (?)
 
 ###### Greenhouse signature identification in GIS Automatic classification plugin.
 
