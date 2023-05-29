@@ -120,7 +120,7 @@ To obtain a precise classification, i need to understand which materials are mos
 
 *At the moment, I have identified areas with potential greenhouses and can extract their coordinates for further processing in Python. However, I have not done that yet because the preliminary results do not accurately reflect the greenhouse locations (for example, when compared to satellite imagery, many of the areas classified by the classifier do not even represent buildings). The classification needs to be modified.*
 
-
+![Classification](https://github.com/Phoenix-ju/greenhouses-in-France/blob/main/Classification.png)
 
 ![Extract selected features](https://github.com/Phoenix-ju/greenhouses-in-France/blob/main/extract%20selected%20features.png)
 
