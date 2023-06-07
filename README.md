@@ -100,27 +100,27 @@ Each band in Landsat 8-9 images has a resolution of 30 meters and covers a diffe
 
 Only greenhouses from the OSM building data that belonged to the Prealps de Provence region were selected. Then, a spectral signature was assigned to the greenhouses and overlaid on the building footprints data, which represents all the buildings in the region. During the overlay, houses that matched the spectral signature indicative of greenhouses were displayed.
 
-To select a spectral sample in GIS, you can follow these steps:
+To select a spectral sample in GIS, there are following steps:
 
-* Activate the ROI (Region of Interest) pointer in your GIS software. This option helps you identify areas with similar spectral characteristics.
+* Activate the ROI (Region of Interest) pointer in GIS software. This option helps identify areas with similar spectral characteristics.
 
-* Choose a real greenhouse on the map that you want to use as a sample. Mark it as a reference or standard sample.
+* Choose a real greenhouse on the map that will be used as a sample. Mark it as a reference or standard sample.
 
-* Apply this reference sample to the entire region you are interested in. The software will compare the spectral signatures of other areas with the reference sample.
+* Apply this reference sample to the entire region of interes. The software will compare the spectral signatures of other areas with the reference sample.
 
-* The resulting vector data can be analyzed further. You can intersect the vectorized result with the building footprints to extract the potential locations of greenhouses.
+* The resulting vector data can be analyzed further. Further, i intersect the vectorized result with the building footprints to extract the potential locations of greenhouses.
 
-To obtain a precise classification, i need to understand which materials are most commonly used for greenhouse roofs and select the appropriate spectral signature for detection. To accomplish this:
+To obtain a precise classification, we identify materials, which are most commonly used for greenhouse roofs. Select the appropriate spectral signature for detection. To accomplish this:
 
-* Determine the predominant roofing materials used in greenhouse construction. This can be done by conducting a survey or collecting information on greenhouse structures in the region. **Common materials include glass, polycarbonate, or plastic film**.
+* Determine the predominant roofing materials used in greenhouse construction. **Common materials include glass, polycarbonate, or plastic film**.
 
 * Analyze the collected data to identify the most frequently used roofing material for greenhouses.
 
 * Once the primary roofing material is identified, i search for the corresponding spectral signatures/spectral libraries. Many remote sensing or GIS software provide pre-defined spectral libraries that include various materials.
 
-* Select the spectral signature that corresponds to the roofing material you identified as most common. Use this spectral signature as a reference or standard for your spectral analysis to detect similar roofs in the region.material you identified as most common. Use this spectral signature as a reference or standard for your spectral analysis to detect similar roofs in the region.
+* Select the spectral signature that corresponds to the roofing material identified as most common. Use this spectral signature as a reference or standard for the spectral analysis to detect similar roofs in the region. 
 
-*At the moment, I have identified areas with potential greenhouses and can extract their coordinates for further processing in Python. However, I have not done that yet because the preliminary results do not accurately reflect the greenhouse locations (for example, when compared to satellite imagery, many of the areas classified by the classifier do not even represent buildings). The classification needs to be modified.*
+*At the moment, i dentified areas with potential greenhouses and can extract their coordinates for further processing in Python. However, I have not done that yet because the preliminary results do not accurately reflect the greenhouse locations (for example, when compared to satellite imagery, many of the areas classified by the classifier do not even represent buildings). The classification needs to be modified.*
 
 ![Classification](https://github.com/Phoenix-ju/greenhouses-in-France/blob/main/Classification.png)
 
