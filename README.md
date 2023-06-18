@@ -130,7 +130,12 @@ To obtain a precise classification, we identify materials, which are most common
 ![Extract by location](https://github.com/Phoenix-ju/greenhouses-in-France/blob/main/extraction%20by%20location.png)
 
 
+[Importance of RGB in QGis for diffrent types of landuse](https://www.esri.com/arcgis-blog/products/product/imagery/band-combinations-for-landsat-8/)
 
+1. Buildings
+2. Roads
+3. Greenhouses
+4. Farms
 
 
 
