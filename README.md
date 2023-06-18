@@ -26,6 +26,7 @@ Overall, the MDI was found to be the most important feature for greenhouse detec
 6. [High-spatiotemporal-resolution mapping of global urban change from 1985 to 2015](https://drive.google.com/file/d/1hADuFtGuqmRP1cgfFfVf9QrXjVxsk0pB/view)
 7. [Mapping Plastic Greenhouses with Two-Temporal Sentinel-2 Images and 1D-CNN Deep Learning](https://www.mdpi.com/2072-4292/13/14/2820/htm)
 A new fine- and coarse-scale mapping approach using two-temporal Sentinel-2 images with various seasonal characteristics and a one-dimensional convolutional neural network (1D-CNN) was proposed. Having applied this approach in a pilot area study, the results were summarized as follows: (1) A time-series analysis of Sentinel-2 images showed that the *reflectance of greenhouses changes during crop growth and development. In particular, the red-edge and near-infrared bands undergo a significant increase and then decrease during the whole crop growth period.* Thus, two critical period images, containing a substantial difference in greenhouse reflectance, were sufficient to carry out an accurate and efficient mapping result. (2) The 1D-CNN classifier was used to map greenhouses by capturing subtle details and the overall trend of the spectrum curve.
+8. [Object Detection and Image Segmentation with Deep Learning on Earth Observation Data: A Review-Part I: Evolution and Recent Trends](https://www.mdpi.com/2072-4292/12/10/1667)
 
 
 ### Data collection. Source 1: 
