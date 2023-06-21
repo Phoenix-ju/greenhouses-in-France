@@ -132,10 +132,10 @@ To obtain a precise classification, we identify materials, which are most common
 
 [Importance of RGB in QGis for diffrent types of landuse](https://www.esri.com/arcgis-blog/products/product/imagery/band-combinations-for-landsat-8/)
 
-1. Buildings
-2. Roads
-3. Greenhouses
-4. Farms
+1. Buildings ()
+2. Roads ()
+3. Greenhouses ()
+4. Farms (6-5-2 or 4-5-6)
 
 
 
