@@ -41,7 +41,7 @@ The meta data derived from shape files in GIS contains information about the bui
 
 parking, roof, ruins, office, commercial, retail, public, apartments etc. including those relevant for the study such as greenhouse, glasshouse, farm, farm auxilliary.
 
-![Attribute table.png](https://github.com/Phoenix-ju/greenhouses-in-France/blob/main/Attribute%20table.png)
+![Attribute table.png](https://github.com/Phoenix-ju/greenhouses-in-France/blob/main/Screenshot/Attribute%20table.png)
 
 Out of the ***3 471 087*** rows, only ***6 089*** are labeled with a specific building type. The remaining ***3 464 998*** IDs are missing and marked as NULL. 
 
@@ -58,9 +58,9 @@ It is evident that a large number of greenhouses are not labeled due to the abse
 * The number of glasshouses is 15. (they look pretty simillar to greenhouses on Bing Satellite)
 * The number of farmland is 1104. (it is important due to presence of the houses, which are simillar to greenhouses on this land)
 * The number of farmyard is 87. (the same as above)
-![Screenshot (20)](https://github.com/Phoenix-ju/greenhouses-in-France/blob/main/Province%20Cote%20d%20Azur.png)
+![Screenshot (20)](https://github.com/Phoenix-ju/greenhouses-in-France/blob/main/Screenshot/Province%20Cote%20d%20Azur.png)
 
-![Prealpes de Provence map from QGIS](https://github.com/Phoenix-ju/greenhouses-in-France/blob/main/Prealpes%20de%20province.png)
+![Prealpes de Provence map from QGIS](https://github.com/Phoenix-ju/greenhouses-in-France/blob/main/Screenshot/Prealpes%20de%20province.png)
 
 ##### Data collection. Source 2.
 * [Farm boundary and field parcel data from Registre parcellaire graphique (Graphic parcel register, France)](https://geoservices.ign.fr/telechargement)
@@ -86,7 +86,7 @@ Landsat 8 and Landsat 9 are satellite missions equipped with advanced sensors. O
 * Four images covering the Cote d'Azur region were chosen, with an additional criterion of cloud cover less than 10%. 
 * Each image consists of 6 bands, and there was an accompanying mtl.text file that provides GIS information about the channels. 
 * This results in 7 rasters that was mosaicked together so that each pixel contains information from all 7 bands. To accomplish this, preprocessing was conducted in GIS.
-![Screenshot (31).png](https://github.com/Phoenix-ju/greenhouses-in-France/blob/main/Screenshot%20(31).png)
+![Screenshot (31).png](https://github.com/Phoenix-ju/greenhouses-in-France/blob/main/Screenshot/Screenshot%20(31).png)
 
 Each band in Landsat 8-9 images has a resolution of 30 meters and covers a different wavelength range. Here are the wavelength ranges for each band:
 μm
@@ -123,11 +123,11 @@ To obtain a precise classification, we identify materials, which are most common
 
 *At the moment, i dentified areas with potential greenhouses and can extract their coordinates for further processing in Python. However, I have not done that yet because the preliminary results do not accurately reflect the greenhouse locations (for example, when compared to satellite imagery, many of the areas classified by the classifier do not even represent buildings). The classification needs to be modified.*
 
-![Classification](https://github.com/Phoenix-ju/greenhouses-in-France/blob/main/Classification.png)
+![Classification](https://github.com/Phoenix-ju/greenhouses-in-France/blob/main/Screenshot/Classification.png)
 
-![Extract selected features](https://github.com/Phoenix-ju/greenhouses-in-France/blob/main/extract%20selected%20features.png)
+![Extract selected features](https://github.com/Phoenix-ju/greenhouses-in-France/blob/main/Screenshot/extract%20selected%20features.png)
 
-![Extract by location](https://github.com/Phoenix-ju/greenhouses-in-France/blob/main/extraction%20by%20location.png)
+![Extract by location](https://github.com/Phoenix-ju/greenhouses-in-France/blob/main/Screenshot/extraction%20by%20location.png)
 
 
 [Importance of RGB in QGis for diffrent types of landuse](https://www.esri.com/arcgis-blog/products/product/imagery/band-combinations-for-landsat-8/)
