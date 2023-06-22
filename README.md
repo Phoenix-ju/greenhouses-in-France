@@ -138,7 +138,15 @@ To obtain a precise classification, we identify materials, which are most common
 4. Farms (6-5-2 or 4-5-6)
 
 
+###### Spectral signatures
 
+![Classification](https://github.com/Phoenix-ju/greenhouses-in-France/blob/main/Screenshot/signatures.png)
+
+![Classification](https://github.com/Phoenix-ju/greenhouses-in-France/blob/main/Screenshot/sign1.png)
+
+![Classification](https://github.com/Phoenix-ju/greenhouses-in-France/blob/main/Screenshot/sign2.png)
+
+![Classification](https://github.com/Phoenix-ju/greenhouses-in-France/blob/main/Screenshot/sign3.png)
 
 
 
